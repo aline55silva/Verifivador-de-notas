@@ -4,7 +4,7 @@ from tkinter import messagebox
 def verificar_nota():
     nota_texto = entry_nota.get()
     
-    if nota_texto.replace(".", "", 1).isdigit():  # verifica se é número (aceita decimal)
+    if nota_texto.replace(".", "", 1).isdigit(): 
         nota = float(nota_texto)
         
         if nota == 10:
@@ -24,7 +24,6 @@ def verificar_nota():
     else:
         messagebox.showerror("Erro", "Digite um número válido.")
 
-# Janela principal
 root = tk.Tk()
 root.title("Verificador de Nota")
 root.geometry("300x200")
